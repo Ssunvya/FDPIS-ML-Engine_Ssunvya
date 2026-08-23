@@ -1,0 +1,89 @@
+{
+    "best_model": "CatBoost",
+    "validation_accuracy": 0.7566660138216614,
+    "optimal_threshold": 0.39,
+    "features": [
+        "DAY_OF_MONTH",
+        "DAY_OF_WEEK",
+        "MONTH",
+        "DEP_MINUTES",
+        "ARR_MINUTES",
+        "DEP_HOUR_SIN",
+        "DEP_HOUR_COS",
+        "DOW_SIN",
+        "DOW_COS",
+        "IS_WEEKEND",
+        "DISTANCE",
+        "CRS_ELAPSED_TIME",
+        "SCHEDULED_BLOCK_SPEED",
+        "ORIGIN_HOURLY_DEPARTURES",
+        "ORIGIN_DAILY_DEPARTURES",
+        "DEST_DAILY_ARRIVALS",
+        "CARRIER_ORIGIN_MARKET_SHARE",
+        "TIME_early_morning",
+        "TIME_evening_rush",
+        "TIME_late_night",
+        "TIME_midday",
+        "TIME_morning_rush",
+        "CARRIER_DELAY_RATE",
+        "ORIGIN_DELAY_RATE",
+        "DEST_DELAY_RATE",
+        "ROUTE_DELAY_RATE"
+    ],
+    "all_results": [
+        {
+            "Model": "CatBoost",
+            "Accuracy": 0.7566660138216614,
+            "Precision": 0.5489199491740788,
+            "Recall": 0.07353191489361702,
+            "F1_Score": 0.12969078354848393,
+            "ROC_AUC": 0.6698169539325114,
+            "Threshold": 0.39
+        },
+        {
+            "Model": "LightGBM",
+            "Accuracy": 0.7549453009149156,
+            "Precision": 0.5608108108108109,
+            "Recall": 0.02825531914893617,
+            "F1_Score": 0.053800032409658076,
+            "ROC_AUC": 0.6510015450687181,
+            "Threshold": 0.5
+        },
+        {
+            "Model": "XGBoost",
+            "Accuracy": 0.7548613636999524,
+            "Precision": 0.5377218934911243,
+            "Recall": 0.04124822695035461,
+            "F1_Score": 0.07661906518417032,
+            "ROC_AUC": 0.6495019031880721,
+            "Threshold": 0.43
+        },
+        {
+            "Model": "HistGradientBoosting",
+            "Accuracy": 0.7546515206625444,
+            "Precision": 0.53556827473426,
+            "Recall": 0.03716312056737588,
+            "F1_Score": 0.06950339558573854,
+            "ROC_AUC": 0.654217369163968,
+            "Threshold": 0.46
+        },
+        {
+            "Model": "Majority Class Baseline",
+            "Accuracy": 0.753434431045578,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1_Score": 0.0,
+            "ROC_AUC": 0.5,
+            "Threshold": 0.5
+        },
+        {
+            "Model": "Logistic Regression",
+            "Accuracy": 0.7533644833664419,
+            "Precision": 0.41379310344827586,
+            "Recall": 0.0006808510638297873,
+            "F1_Score": 0.0013594652769910501,
+            "ROC_AUC": 0.6260987229512563,
+            "Threshold": 0.66
+        }
+    ]
+}
